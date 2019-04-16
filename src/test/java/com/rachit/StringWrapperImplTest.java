@@ -37,7 +37,7 @@ public class StringWrapperImplTest {
                 "are created\n" +
                 "equal\n";
 
-        String curatedExpectedOutput = "Four score\n" +
+        expectedOutput = "Four score\n" +
                 "and seven\n" +
                 "years ago our\n" +
                 "fathers\n" +
@@ -56,7 +56,7 @@ public class StringWrapperImplTest {
 
         String actualOutput = stringWrapper.wrap(input);
 
-        assertEquals(curatedExpectedOutput, actualOutput);
+        assertEquals(expectedOutput, actualOutput);
 
     }
 
