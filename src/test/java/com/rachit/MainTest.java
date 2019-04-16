@@ -5,19 +5,17 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-
 public class MainTest {
 
-    Main main;
+    StringWrapper stringWrapper;
 
     @Before
     public void setUp() throws Exception {
-        main = new Main();
+        stringWrapper = new StringWrapperImpl();
     }
 
     @Test
     public void processTest() {
-
 
         String input = "Four score and seven years ago our fathers brought forth upon this continent a new nation, conceived in liberty and dedicated to the proposition that all men are created equal";
 
@@ -56,11 +54,10 @@ public class MainTest {
                 "are created\n" +
                 "equal\n";
 
-        String actualOutput = main.process(input);
+        String actualOutput = stringWrapper.wrap(input);
 
         assertEquals(curatedExpectedOutput, actualOutput);
 
     }
-
 
 }
