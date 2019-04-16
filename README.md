@@ -42,7 +42,7 @@ Collection Iterator\
 Separation of Interface & Implementation\
 TDD\
 Git\
-GitHub\
+GitHub
 
 Features\
 Unit Test Case\
